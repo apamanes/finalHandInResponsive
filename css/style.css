@@ -33,3 +33,114 @@ img{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+/*
+Source - https://stackoverflow.com/a/50433166
+Posted by Adel Elkhodary
+Retrieved 2025-12-10, License - CC BY-SA 4.0
+*/
+
+  figure {
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    text-align: center;
+  }
+  
+  figcaption {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0;
+    padding: 10px;
+    color: yellow;
+    background-color: black;
+    width: 100%;
+  }
+
+  img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  figure img {
+
+   max-width: 100%;
+   display: block;
+
+  }
+
+  .grid{
+
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+  row-gap: 10px;
+  column-gap: 10px;
+
+  }
+
+@media all and (min-width:772px){
+
+  .grid{
+
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  row-gap: 20px;
+  column-gap: 20px;
+
+  }
+
+  .grid > :last-child{
+
+    grid-column: 1 / span 2;
+
+  }
+
+  img{
+    border: 5px solid blue;
+    border-radius: 50%;
+    width: 100%;
+  }
+
+}
+
+@media all and (min-width:992px){
+
+  .grid{
+
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  row-gap: 20px;
+  column-gap: 20px;
+
+  }
+
+  .grid > :nth-child(3n){
+
+    grid-column: 1 / span 2;
+
+  }
+
+  img{
+    border: 5px solid blue;
+    border-radius: 0px;
+    width: 100%;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce){
+
+  footer p{
+
+    animation: none !important;
+    transition: none !important;
+
+  }
+
+
+}
+
