@@ -24,7 +24,7 @@ li{
 }
 
 img{
-    border: 5px solid blue;
+    border: 5px solid rgb(8, 106, 72);
     border-radius: 35px;
     width: 100%;
   }
@@ -52,8 +52,8 @@ Retrieved 2025-12-10, License - CC BY-SA 4.0
     bottom: 0.5em;
     left: 0;
     padding: 10px;
-    color: yellow;
-    background-color: black;
+    color: rgb(78, 53, 0);
+    background-color: rgb(255, 198, 93);
     width: 100%;
   }
 
@@ -80,6 +80,7 @@ Retrieved 2025-12-10, License - CC BY-SA 4.0
 
   }
 
+
 @media all and (min-width:772px){
 
   .grid{
@@ -99,7 +100,7 @@ Retrieved 2025-12-10, License - CC BY-SA 4.0
   }
 
   img{
-    border: 5px solid blue;
+    border: 5px solid rgb(8, 106, 72);
     border-radius: 50%;
     width: 100%;
   }
@@ -125,7 +126,7 @@ Retrieved 2025-12-10, License - CC BY-SA 4.0
   }
 
   img{
-    border: 5px solid blue;
+    border: 5px solid rgb(8, 106, 72);
     border-radius: 0px;
     width: 100%;
   }
@@ -134,13 +135,32 @@ Retrieved 2025-12-10, License - CC BY-SA 4.0
 
 @media (prefers-reduced-motion: reduce){
 
-  footer p{
+  html{
 
-    animation: none !important;
-    transition: none !important;
+    scroll-behavior: auto;
 
   }
 
+
+}
+
+@media (prefers-color-scheme: dark){
+
+  figure figcaption {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0;
+    padding: 10px;
+    color: rgb(255, 191, 0);
+    background-color: black;
+    width: 100%;
+  }
+
+
+img{
+  border: 5px solid black;
+  width: 100%;
+}
 
 }
 
